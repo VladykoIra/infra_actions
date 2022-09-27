@@ -67,7 +67,7 @@ jobs:
         key: ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQCadnWKdL4Ou8J+cDjdNAyo2qg0qJDRSf7b4IhIff2ISJUszH4azCTr71tIXB/UFrcieEIP/Ix5SS5fs071lqit923daY+AuXf204s/EuiJud8sZCEvvjrQXPcQHSaOq0i7xPw4EUugfK/hPzTXOievWLKu/nzVZXpvpaTWABEV5Y810kO2SzAW+Y0ZTln1g9iOcPGsGUgT3KN6dzJErb1fO3cJtY/ukA7x79Vff+hDqzMO89oF/2vmevL1C8PRuDaav+QbOyp+pd3fNzrOoaf8ujlToYyoqLo96renazzvezmphrOkfxoC1/DPAqYFB6CHMQFKWJD56xVEBU7Kyp/1SGak2orUlPBQj+6OfohteuIx13UU9fG4PtN/SCTjQteLYXbZrNtUiBBF5bsIaU5myfV1wyqmOLQGm93eb1BG+AcSPdrr6FCzuZlhH1tuRAQZKa5TLyHtGfVZGr2VcmPGQnR/OLypc730BeFfnu3S5fnvSJe1hC7cYBSyH2834dU= iri_k@Ira
         passphrase: 1982 # Если ваш ssh-ключ защищён фразой-паролем
         script: |
-          # Выполняет pull образа с DockerHub
+          #Выполняет pull образа с DockerHub
           sudo docker pull kanevairik/devops
           #остановка всех контейнеров
           sudo docker stop $(sudo docker ps -a -q)
